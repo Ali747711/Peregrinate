@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabiev Azamat - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Avenir';
+            src: url('https://fonts.cdnfonts.com/css/avenir') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">Nabiev Azamat</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('images/hiking_busan.jpeg')"></div>
+            <div class="slide" style="background-image: url('images/background-2.jpeg')"></div>
+            <div class="slide" style="background-image: url('images/background-3.JPG')"></div>
+            <div class="slide" style="background-image: url('images/background-4.jpeg')"></div>
+            <div class="slide" style="background-image: url('images/background-5.jpeg')"></div>
+            <div class="slide" style="background-image: url('images/background-6.jpeg')"></div>
+            <div class="slide" style="background-image: url('images/background-7.jpeg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Nabiev Azamat</h1>
+            <p>Currently surviving university life at Dong-a University while pretending to be a grown-up. From managing
+                hospitality chaos to figuring out how to survive Korean food (spoiler: I'm still alive), I'm here to
+                make the most of every adventure. Stay tuned! 😎</p>
+        </div>
+        <div class="slideshow-controls">
+            <button class="control-btn prev" title="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="control-btn next" title="Next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="hero-quote" data-aos="fade-up">
+            <p>"Wilderness is not a luxury but a necessity of the human spirit."</p>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                    <p class="typewriter">Hello! I'm Azamat, a passionate hospitality professional with a dedication to
+                        providing exceptional service and creating memorable experiences.</p>
+                    <p>With a background in hotel management, restaurant service, and teaching, I bring a diverse skill
+                        set and a customer-focused approach to every role.</p>
+                </div>
+                <div class="skills" data-aos="fade-left" data-aos-delay="400">
+                    <h3>Skills & Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Multilingual</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Adaptability</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Organization</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-dot">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Hotel Experience</h3>
+                        <span class="date">2024 - 2025</span>
+                        <p>Worked as a Front Desk Trainee in a leading hotel chain, providing exceptional guest service
+                            and learning hotel operations.</p>
+                        <button class="read-more" data-modal="hotel-modal">Read More</button>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-dot">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Teaching Experience (Camp)</h3>
+                        <span class="date">2024</span>
+                        <p>Taught English at a summer camp, creating engaging lessons and fostering a positive learning
+                            environment for students aged 12–16.</p>
+                        <button class="read-more" data-modal="teaching-modal">Read More</button>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+                    <div class="timeline-dot">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Academic Experience</h3>
+                        <span class="date">2023 - 2024</span>
+                        <p>Assisted faculty and students with administrative tasks, events, and academic operations at
+                            Dong-A University.</p>
+                        <button class="read-more" data-modal="academic-modal">Read More</button>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="800">
+                    <div class="timeline-dot">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>IELTS Trainer</h3>
+                        <span class="date">2022</span>
+                        <p>Provided IELTS training, helping students improve English proficiency and prepare for exams,
+                            while managing a small team.</p>
+                        <button class="read-more" data-modal="ielts-modal">Read More</button>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+                    <div class="timeline-dot">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Teaching Experience</h3>
+                        <span class="date">2016 - 2018</span>
+                        <p>Taught language and cultural skills, developing strong communication and leadership
+                            abilities.</p>
+                        <button class="read-more" data-modal="teaching-modal">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education & Certifications</h2>
+            <div class="education-content">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelor's Degree in Business</h3>
+                        <p class="institution">Dong-A University</p>
+                        <p class="years">2021 - 2025</p>
+                        <p>Focused on hospitality
+                            operations, customer service,
+                            and business management.
+                            Gaining skills in communication,
+                            problem-solving, and team
+                            collaboration, preparing for a
+                            career in hotel front desk operations and guest services.</p>
+                    </div>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="education-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Hospitality Internship Program</h3>
+                        <p class="institution">Luxury Hotel Chain, Marriott International</p>
+                        <p class="years">2024</p>
+                        <p>Gained hands-on experience in various hotel departments including front desk, housekeeping,
+                            and F&B service.</p>
+                    </div>
+                </div>
+                <div class="certifications" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Certifications</h3>
+                    <div class="certification-items">
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Certificate of Internship at Marriot International</h4>
+                                <p>Completed a course in penetration testing, learning the fundamentals of ethical
+                                    hacking and cybersecurity.</p>
+                                <p class="score">Issued by Marriott International, 2025</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Data, Data Everywhere</h4>
+                                <p>Learned how to collect, analyze, and interpret data in various contexts using tools
+                                    and technologies.</p>
+                                <p class="score">Issued by Google, 2024</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Junior Pentester Certificate</h4>
+                                <p>Completed a course in penetration testing, learning the fundamentals of ethical
+                                    hacking and cybersecurity.</p>
+                                <p class="score">Issued by TryHackMe, 2024</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>IELTS</h4>
+                                <p>International English Language Testing System</p>
+                                <p class="score">Score: 7.0</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>TOPIK</h4>
+                                <p>Test of Proficiency in Korean</p>
+                                <p class="score">Level 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects & Activities</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/projects/image-1.jpeg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Analysis using CONA Method for Busan Lotte World</h3>
+                        <p>Analyzed and interpreted data to improve customer engagement and services. Utilized
+                            statistical methods to understand patterns and trends.</p>
+                        <div class="project-tags">
+                            <span>Data Analysis</span>
+                            <span>CONA Method</span>
+                        </div>
+                        <button
+                            href="https://docs.google.com/document/d/1xzs4ez1mEsgCNXkfpoFWtT_803Lhr2pOzcNib3QuwqM/edit?tab=t.0#heading=h.a8ll84y425dw"
+                            class="view-project" data-modal="project1-modal">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="images/projects/customer.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Service Enhancement</h3>
+                        <p>Developed and implemented a training program to improve customer service standards.</p>
+                        <div class="project-tags">
+                            <span>Training</span>
+                            <span>Customer Service</span>
+                        </div>
+                        <button class="view-project" data-modal="project2-modal">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/projects/reverse-shell.webp" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>CyberShell Generator</h3>
+                        <p>A sleek web tool for cybersecurity education that generates reverse shell code with multiple
+                            options. Features dark/light mode, custom animations, and responsive design. Built entirely
+                            with HTML, CSS, and vanilla JavaScript.</p>
+                        <div class="project-tags">
+                            <span>Reverse Shell</span>
+                            <span>Dark/Light Mode</span>
+                            <span>Custom Animations</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <button href="https://ali747711.github.io/Reverse-shell/" class="view-project"
+                            data-modal="project3-modal">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/projects/culture.JPG" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cultural Exchange Program</h3>
+                        <p>Led a cultural exchange initiative to promote international understanding in hospitality.</p>
+                        <div class="project-tags">
+                            <span>Cultural</span>
+                            <span>International</span>
+                        </div>
+                        <button class="view-project" data-modal="project4-modal">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/projects/finance.jpg" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3>Financial Analysis: Apple Inc vs Microsoft Corporation</h3>
+                        <p>Conducted a comprehensive financial analysis comparing Apple Inc and Microsoft Corporation,
+                            focusing on revenue, profit margins, and market share.</p>
+                        <div class="project-tags">
+                            <span>Financial Analysis</span>
+                            <span>Apple Inc</span>
+                            <span>Microsoft Corporation</span>
+                        </div>
+                        <button class="view-project" data-modal="project5-modal">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/projects/IMG_0685.PNG" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <h3>TSP Game</h3>
+                        <p>The TSP game challenges players to plan the shortest route through countries on a 3D
+                            interactive globe. Rotate freely, select locations, and optimize your journey with a sleek,
+                            sound-free interface.</p>
+                        <div class="project-tags">
+                            <span>TSP Game</span>
+                            <span>3D Interactive Globe</span>
+                            <span>Sound-Free Interface</span>
+                        </div>
+                        <button class="view-project" data-modal="project6-modal">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/projects/lead.png" alt="Project 7">
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Tool: Lead Time Variability & Bullwhip Effect Analyzer</h3>
+                        <p>Developed a web tool to analyze lead time variability and bullwhip effect in supply chain
+                            management.</p>
+                        <div class="project-tags">
+                            <span>Supply Chain Management</span>
+                            <span>Lead Time Variability</span>
+                            <span>Bullwhip Effect</span>
+                        </div>
+                        <button class="view-project" data-modal="project7-modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Gallery</h2>
+
+            <!-- Gallery Filters -->
+            <div class="gallery-controls" data-aos="fade-up" data-aos-delay="200">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="travel">Travel</button>
+                <button class="gallery-filter" data-filter="professional">Professional</button>
+                <button class="gallery-filter" data-filter="activities">Activities</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 - Hiking in Busan -->
+                <div class="gallery-item main-item" data-category="travel" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/hiking_busan.jpeg" alt="Hiking in Busan" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Travel</div>
+                        <span>Hiking in Busan</span>
+                    </div>
+                </div>
+
+                <!-- New image in top-right position -->
+                <div class="gallery-item top-right-item" data-category="professional" data-aos="fade-up"
+                    data-aos-delay="250">
+                    <img src="images/image-17.jpeg" alt="Professional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Professional</div>
+                        <span>Hospitality Leadership</span>
+                    </div>
+                </div>
+
+                <!-- TEMPLATE FOR ADDING NEW IMAGES: Copy this block and replace image path, alt text, and caption -->
+                <!-- 
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/your-image-name.jpg" alt="Image Description" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Image Caption</span>
+                    </div>
+                </div>
+                -->
+
+                <!-- Placeholder items - Replace these with your actual images -->
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/image-1.jpeg" alt="Activities" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Activities</div>
+                        <span>Cultural Experience</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/image-2.jpeg" alt="Travel" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Travel</div>
+                        <span>Scenic Landscapes</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="professional" data-aos="fade-up" data-aos-delay="500">
+                    <img src="images/image-3.jpeg" alt="Professional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Professional</div>
+                        <span>Hospitality Excellence</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="600">
+                    <img src="images/image-4.jpeg" alt="Activities" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Activities</div>
+                        <span>Community Engagement</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel" data-aos="fade-up" data-aos-delay="700">
+                    <img src="images/image-5.jpeg" alt="Travel" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Travel</div>
+                        <span>Urban Exploration</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="professional" data-aos="fade-up" data-aos-delay="800">
+                    <img src="images/image-6.jpeg" alt="Professional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Professional</div>
+                        <span>Industry Networking</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="900">
+                    <img src="images/image-7.jpeg" alt="Activities" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Activities</div>
+                        <span>Outdoor Adventures</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel" data-aos="fade-up" data-aos-delay="1000">
+                    <img src="images/image-8.jpeg" alt="Travel" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Travel</div>
+                        <span>Natural Wonders</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="professional" data-aos="fade-up" data-aos-delay="1100">
+                    <img src="images/image-9.jpeg" alt="Professional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Professional</div>
+                        <span>Service Excellence</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="1200">
+                    <img src="images/image-10.jpeg" alt="Activities" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Activities</div>
+                        <span>Cultural Immersion</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel" data-aos="fade-up" data-aos-delay="1300">
+                    <img src="images/image-11.jpeg" alt="Travel" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Travel</div>
+                        <span>Coastal Exploration</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="professional" data-aos="fade-up" data-aos-delay="1400">
+                    <img src="images/image-12.jpeg" alt="Professional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Professional</div>
+                        <span>Team Collaboration</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="1500">
+                    <img src="images/image-13.jpeg" alt="Activities" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Activities</div>
+                        <span>Leisure Pursuits</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="travel" data-aos="fade-up" data-aos-delay="1600">
+                    <img src="images/image-14.jpeg" alt="Travel" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-category">Travel</div>
+                        <span>Destination Discovery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content">
+                <form id="contact-form" data-aos="fade-right" data-aos-delay="200">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="contact-info" data-aos="fade-left" data-aos-delay="400">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/nabiev0726" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nabiev-azamat-292903259" target="_blank"
+                            class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Busan, South Korea</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="quote">
+                    <p>"The journey of a thousand miles begins with a single step."</p>
+                </div>
+                <div class="back-to-top">
+                    <a href="#hero">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Nabiev Azamat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="hotel-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Hotel Experience</h2>
+            <p class="modal-date">2024 - 2025</p>
+            <p>My hotel experience at Sheraton and Four Points by Sheraton Hong Kong has been a significant step in my
+                hospitality career:</p>
+            <h3>Key Responsibilities:</h3>
+            <ul>
+                <li><strong>Front Desk Trainee (2024–2025):</strong> Gained hands-on experience in hotel operations,
+                    check-in/out, guest relations, and issue resolution.</li>
+                <li>Developed customer service skills in a fast-paced, international setting.</li>
+                <li>Immersed myself in the vibrant hospitality scene of Hong Kong.</li>
+                <li>Built a strong professional network and improved management understanding.</li>
+            </ul>
+            <p>This role has fueled my passion for hospitality and strengthened my commitment to delivering outstanding
+                guest experiences.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Teaching Modal -->
+    <div id="teaching-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Teaching Experience (Camp)</h2>
+            <div class="modal-body">
+                <p class="modal-date">2024</p>
+                <p>As a Camp Instructor at GN Education Centre, I developed valuable teaching and leadership skills:</p>
+                <h3>Key Responsibilities:</h3>
+                <ul>
+                    <li>Taught English in an immersive camp environment.</li>
+                    <li>Adapted lessons for diverse age groups and proficiency levels.</li>
+                    <li>Used creativity to design engaging activities.</li>
+                    <li>Built cultural awareness and strengthened communication skills.</li>
+                </ul>
+                <p>This experience deepened my passion for education and cross-cultural communication.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Academic Modal -->
+    <div id="academic-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Academic Experience</h2>
+            <div class="modal-body">
+                <p class="modal-date">2023 - 2024</p>
+                <p>At Dong-A University’s IBM Department, I supported academic operations for nearly a year:</p>
+                <h3>Key Responsibilities:</h3>
+                <ul>
+                    <li>Provided administrative assistance and handled student inquiries.</li>
+                    <li>Helped organize departmental events and academic activities.</li>
+                    <li>Gained proficiency in Microsoft Office, teamwork, and communication.</li>
+                </ul>
+                <p>This internship sharpened my organizational skills and gave me insight into academic operations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- IELTS Modal -->
+    <div id="ielts-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>IELTS Trainer</h2>
+            <div class="modal-body">
+                <p class="modal-date">2022</p>
+                <p>As an IELTS Trainer at Dominat Study Education Center, I:</p>
+                <h3>Key Responsibilities:</h3>
+                <ul>
+                    <li>Provided IELTS preparation and exam strategies.</li>
+                    <li>Managed a team of instructors and coordinated lesson plans.</li>
+                    <li>Enhanced my teaching, time management, and leadership abilities.</li>
+                </ul>
+                <p>This role allowed me to make a positive impact on students’ language journeys.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Data Analysis using CONA Method for Busan Lotte World</h2>
+            <div class="modal-body">
+                <p>Conducted a comprehensive review-based analysis using the CONA framework to evaluate visitor
+                    satisfaction at Lotte World Adventure Busan, based on over 800 Google Maps reviews.</p>
+                <h3>Key Achievements:</h3>
+                <ul>
+                    <li>Clustered reviews into 7 major themes including facilities, pricing, and entertainment quality.
+                    </li>
+                    <li>Analyzed 887 visitor reviews and quantified ratings using statistical measures (mean, median,
+                        standard deviation).</li>
+                    <li>Developed a dashboard to visualize key metrics and trends.</li>
+                    <li>Generated actionable insights for management to improve visitor experience.</li>
+                </ul>
+                <p>The project offered actionable insights into consumer perceptions and served as a model for applying
+                    sentiment analysis in the tourism and hospitality industry.</p>
+                <div class="modal-actions">
+                    <a href="https://docs.google.com/document/d/1xzs4ez1mEsgCNXkfpoFWtT_803Lhr2pOzcNib3QuwqM/edit?tab=t.0#heading=h.a8ll84y425dw"
+                        class="project-button" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Customer Service Enhancement</h2>
+            <div class="modal-body">
+                <p>Developed and implemented a comprehensive training program aimed at improving customer service
+                    standards across all departments.</p>
+                <h3>Key Components:</h3>
+                <ul>
+                    <li>Created detailed service standards documentation</li>
+                    <li>Designed interactive training modules for different service scenarios</li>
+                    <li>Implemented a feedback system to measure improvement</li>
+                    <li>Conducted regular refresher sessions</li>
+                </ul>
+                <p>The program resulted in a 25% increase in positive guest feedback and significant improvements in
+                    guest satisfaction scores.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Cybersecurity Tool: Reverse Shell Generator (Web-Based)</h2>
+            <div class="modal-body">
+                <p>Developed a web-based reverse shell generator for ethical hacking and cybersecurity education
+                    purposes. The tool is hosted on GitHub and built entirely with front-end technologies.</p>
+                <h3>Program Elements:</h3>
+                <ul>
+                    <li>Created an intuitive interface using HTML, CSS, and JavaScript with a futuristic, animated
+                        design</li>
+                    <li>Enabled users to generate reverse shell commands for multiple programming languages (e.g., Bash,
+                        Python, PHP, etc.)</li>
+                    <li>Designed with no backend dependencies, making it lightweight and fast to load</li>
+                    <li>Implemented copy-to-clipboard functionality for quick command use in penetration testing labs
+                    </li>
+                </ul>
+                <p>The project supports beginner cybersecurity learners by simplifying access to commonly used reverse
+                    shell payloads in a secure, educational context.</p>
+                <div class="modal-actions">
+                    <a href="https://ali747711.github.io/Reverse-shell/" class="project-button" target="_blank">View
+                        Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project4-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Customer Service Enhancement</h2>
+            <div class="modal-body">
+                <p>Led a cultural exchange initiative designed to promote international understanding among hospitality
+                    staff and enhance service for international guests.</p>
+                <h3>Program Elements:</h3>
+                <ul>
+                    <li>Organized language exchange sessions between staff members</li>
+                    <li>Developed cultural sensitivity training materials</li>
+                    <li>Created country-specific service guidelines</li>
+                    <li>Facilitated international cuisine workshops</li>
+                </ul>
+                <p>The program improved staff confidence in handling international guests and enhanced the overall guest
+                    experience for visitors from diverse cultural backgrounds.</p>
+            </div>
+        </div>
+    </div>
+    <div id="project5-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Financial Analysis: Apple Inc vs Microsoft Corporation</h2>
+            <div class="modal-body">
+                <p>Conducted a comprehensive financial analysis comparing Apple Inc and Microsoft Corporation, focusing
+                    on revenue, profit margins, and market share.</p>
+                <h3>Program Elements:</h3>
+                <ul>
+                    <li>Analyzed key components of the income statement, including operating income, revenues, and net
+                        income</li>
+                    <li>Identified and investigated years with notable losses or unusually high profits, linking them to
+                        real-world events or company strategies</li>
+                    <li>Evaluated changes in shareholder equity and financial health over multiple fiscal years</li>
+                    <li>Created a dashboard to visualize key metrics and trends</li>
+                </ul>
+                <p>Driven by a passion for Apple products, this project combined personal interest with academic
+                    learning, deepening understanding of financial reporting, profitability metrics, and strategic
+                    market positioning.</p>
+                <div class="modal-actions">
+                    <a href="https://drive.google.com/drive/folders/10WBYBif9EonEuQl-0qIgJD3xwefpXhG4"
+                        class="project-button" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project6-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Interactive Game: TSP Globe-Based Pathfinding</h2>
+            <div class="modal-body">
+                <p>Designed and developed a globe-based interactive game that visualizes the Traveling Salesman Problem
+                    (TSP) using front-end technologies and creative UI enhancements.</p>
+                <h3>Program Elements:</h3>
+                <ul>
+                    <li>Implemented a 3D globe using Three.js</li>
+                    <li>Created an interactive interface for selecting countries and visualizing routes</li>
+                    <li>Developed a pathfinding algorithm to find the shortest route</li>
+                    <li>Integrated real-time globe rotation controls and planned enhancements for full 360° control and
+                        directional movement</li>
+                </ul>
+                <p>The project combined mathematical logic and UI design to offer a fun, educational tool for
+                    visualizing path optimization challenges in a gamified format.</p>
+                <div class="modal-actions">
+                    <a href="https://ali747711.github.io/TSP-game-2/" class="project-button" target="_blank">View
+                        Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project7-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Web Tool: Lead Time Variability & Bullwhip Effect Analyzer</h2>
+            <div class="modal-body">
+                <p>Developed an interactive web application for analyzing procurement lead time data and visualizing
+                    supply chain variability using modern front-end technologies.</p>
+                <h3>Program Elements:</h3>
+                <ul>
+                    <li>Built a user-friendly platform with HTML, CSS, and JavaScript for uploading and analyzing CSV
+                        files</li>
+                    <li>Features a dropdown selector for supplier-specific analysis and a comparison function for
+                        randomly selected suppliers</li>
+                    <li>Integrated a unique forecasting function and lead time variability calculator for advanced
+                        supply chain insights</li>
+                    <li>Enhanced UI with dark/light mode toggle, animated background, and cursor-following effects for a
+                        modern experience</li>
+                </ul>
+                <p>This project demonstrates practical skills in front-end development, data analysis, and UI/UX design,
+                    tailored for academic evaluation and real-world business insight.</p>
+                <div class="modal-actions">
+                    <a href="https://ali747711.github.io/Lead-Time-Variability/" class="project-button"
+                        target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-image" src="" alt="Lightbox Image">
+        <div class="lightbox-caption"></div>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
