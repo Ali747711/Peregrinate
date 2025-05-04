@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <div class="logo">Nabiev Azamat</div>
+            <div class="logo">🌍 Peregrinate</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -428,11 +428,7 @@
                 <button class="gallery-filter" data-filter="activities">Activities</button>
             </div>
 
-            <!-- 3D Globe Gallery Container -->
-            <div id="globe-gallery-container" class="globe-gallery-container" data-aos="fade-up" data-aos-delay="300"></div>
-            
-            <!-- Original gallery grid (hidden but preserved for data) -->
-            <div class="gallery-grid" style="display: none;">
+            <div class="gallery-grid">
                 <!-- Gallery Item 1 - Hiking in Busan -->
                 <div class="gallery-item main-item" data-category="travel" data-aos="fade-up" data-aos-delay="200">
                     <img src="images/hiking_busan.jpeg" alt="Hiking in Busan" class="gallery-image">
@@ -570,39 +566,7 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
             <div class="contact-content">
-                <!-- 3D Envelope Container -->
-                <div class="contact-envelope" data-aos="fade-right" data-aos-delay="200">
-                    <div class="envelope-container">
-                        <div class="envelope-front"></div>
-                        <div class="envelope-back"></div>
-                    </div>
-                    <div class="envelope-content">
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>email@example.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Busan, South Korea</span>
-                            </div>
-                        </div>
-                        <div class="social-hub">
-                            <div class="social-orbit"></div>
-                            <div class="social-links">
-                                <a href="https://instagram.com/nabiev0726" target="_blank" class="social-link instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/nabiev-azamat-292903259" target="_blank" class="social-link linkedin">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Contact Form -->
-                <form id="contact-form" data-aos="fade-left" data-aos-delay="400">
+                <form id="contact-form" data-aos="fade-right" data-aos-delay="200">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -623,6 +587,30 @@
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
+                <div class="contact-info" data-aos="fade-left" data-aos-delay="400">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/nabiev0726" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nabiev-azamat-292903259" target="_blank"
+                            class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Busan, South Korea</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -906,18 +894,6 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-    <!-- Load Three.js and dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
-    
-    <!-- Load Globe Gallery Script -->
-    <script src="js/globe-gallery-new.js"></script>
 </body>
 
 </html>
