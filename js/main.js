@@ -133,54 +133,18 @@ document.addEventListener('DOMContentLoaded', function() {
         themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     }
 
-    // Enhanced Mobile Navigation
-    const navItems = document.querySelectorAll('.nav-links li');
-    const body = document.body;
-    
-    // Create backdrop element for mobile menu
-    const backdrop = document.createElement('div');
-    backdrop.className = 'menu-backdrop';
-    document.body.appendChild(backdrop);
-    
-    // Add animation delay to each nav item
-    navItems.forEach((item, index) => {
-        item.style.setProperty('--i', index);
-    });
-    
-    // Toggle mobile menu
+    // Mobile menu toggle
     hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
+        hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
-        backdrop.classList.toggle('active');
-        body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
     });
-    
-    // Close mobile menu when clicking a link
-    navLinks.querySelectorAll('a').forEach(link => {
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
-            backdrop.classList.remove('active');
-            body.style.overflow = '';
         });
-    });
-    
-    // Close mobile menu when clicking outside
-    backdrop.addEventListener('click', function() {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-        backdrop.classList.remove('active');
-        body.style.overflow = '';
-    });
-    
-    // Close mobile menu on resize if screen becomes larger
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            backdrop.classList.remove('active');
-            body.style.overflow = '';
-        }
     });
 
     // Modal functionality
@@ -213,140 +177,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Contact form validation
     if (contactForm) {
-        const contactEnvelope = document.querySelector('.contact-envelope');
-        const socialOrbit = document.querySelector('.social-orbit');
-        const socialLinks = document.querySelectorAll('.social-link');
-
-        // Initialize light beams
-        function createLightBeams() {
-            socialLinks.forEach(link => {
-                const beam = document.createElement('div');
-                beam.className = 'light-beam';
-                link.appendChild(beam);
-                
-                // Add animation
-                beam.style.animation = 'beamPulse 2s infinite';
-            });
-        }
-
-        // Add hover effects to social links
-        socialLinks.forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                const beam = link.querySelector('.light-beam');
-                beam.style.animation = 'beamPulse 1s infinite';
-                
-                // Add glow effect
-                link.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.5)';
-            });
-            
-            link.addEventListener('mouseleave', () => {
-                const beam = link.querySelector('.light-beam');
-                beam.style.animation = 'beamPulse 2s infinite';
-                
-                // Remove glow effect
-                link.style.boxShadow = 'none';
-            });
-        });
-
-        // Add envelope hover effect
-        contactEnvelope.addEventListener('mouseenter', () => {
-            // Add glow effect
-            contactEnvelope.style.boxShadow = '0 0 30px rgba(255, 255, 255, 0.3)';
-            
-            // Add scale animation
-            contactEnvelope.style.transform = 'scale(1.05)';
-        });
-
-        contactEnvelope.addEventListener('mouseleave', () => {
-            contactEnvelope.style.boxShadow = 'none';
-            contactEnvelope.style.transform = 'scale(1)';
-        });
-
-        // Form validation and submission
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Validate form
-            if (!validateForm()) {
-                return;
-            }
-
-            // Submit form
-            submitForm();
-        });
-
-        function validateForm() {
             let isValid = true;
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
             
             // Reset error messages
-            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-
+            document.querySelectorAll('.error-message').forEach(error => {
+                error.style.display = 'none';
+            });
+            
             // Validate name
-            if (!nameInput.value.trim()) {
-                nameInput.classList.add('error');
-                nameInput.nextElementSibling.textContent = 'Name is required';
+            if (nameInput.value.trim() === '') {
+                showError(nameInput, 'Please enter your name');
                 isValid = false;
-            } else {
-                nameInput.classList.remove('error');
             }
-
+            
             // Validate email
-            if (!emailInput.value.trim()) {
-                emailInput.classList.add('error');
-                emailInput.nextElementSibling.textContent = 'Email is required';
+            if (emailInput.value.trim() === '') {
+                showError(emailInput, 'Please enter your email');
                 isValid = false;
             } else if (!isValidEmail(emailInput.value)) {
-                emailInput.classList.add('error');
-                emailInput.nextElementSibling.textContent = 'Please enter a valid email';
+                showError(emailInput, 'Please enter a valid email');
                 isValid = false;
-            } else {
-                emailInput.classList.remove('error');
             }
-
+            
             // Validate message
-            if (!messageInput.value.trim()) {
-                messageInput.classList.add('error');
-                messageInput.nextElementSibling.textContent = 'Message is required';
+            if (messageInput.value.trim() === '') {
+                showError(messageInput, 'Please enter your message');
                 isValid = false;
-            } else {
-                messageInput.classList.remove('error');
             }
-
-            return isValid;
-        }
-
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-
-        async function submitForm() {
-            try {
-                // Show loading state
-                const submitBtn = contactForm.querySelector('button[type="submit"]');
-                const originalText = submitBtn.querySelector('span').textContent;
-                submitBtn.querySelector('span').textContent = 'Sending...';
-                submitBtn.disabled = true;
-
-                // Add sending animation
-                submitBtn.style.transform = 'translateX(10px)';
-                
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 2000));
-
-                // Show success message
-                alert('Message sent successfully!');
-                contactForm.reset();
-
-                // Reset button
-                submitBtn.querySelector('span').textContent = originalText;
-                submitBtn.disabled = false;
-                submitBtn.style.transform = 'none';
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Failed to send message. Please try again.');
+            
+            // If form is valid, simulate form submission
+            if (isValid) {
+                // In a real application, you would send the form data to a server
+                // For demo purposes, we'll just show a success message
+                contactForm.innerHTML = '<div class="success-message"><i class="fas fa-check-circle"></i><h3>Thank you!</h3><p>Your message has been sent successfully. I will get back to you soon.</p></div>';
             }
-        }
+        });
     }
     
     function showError(input, message) {
@@ -386,14 +257,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         item.style.display = 'none';
                     }
                 });
-                
-                // Update 3D globe gallery if it exists
-                if (window.globeGallery && typeof window.globeGallery.updateVisibleItems === 'function') {
-                    // Allow time for display changes to take effect
-                    setTimeout(() => {
-                        window.globeGallery.updateVisibleItems();
-                    }, 100);
-                }
             });
         });
     }
